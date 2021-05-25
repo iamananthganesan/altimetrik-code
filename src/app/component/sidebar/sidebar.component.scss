@@ -1,0 +1,27 @@
+nav{
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            a{
+                color: #000;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .active{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) { 
+ ul{
+    li{
+        display: inline-block;
+        margin: 0 7px;
+    }
+ }   
+}
