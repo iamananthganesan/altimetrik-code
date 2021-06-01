@@ -1,0 +1,15 @@
+<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row searchField">
+        <div class="form-group">
+            <input placeholder="Start typing document name..." [(ngModel)]="documentName" type="text"
+                class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="document col-xs-12 col-sm-6 col-md-4 col-lg-3 mr-lg-1"
+            *ngFor="let document of documentList | documentPipe:documentName:getParams">
+            <span>{{ document.categoryName }}</span>
+            <p><strong>{{ document.categoryCaption }}</strong></p>
+        </div>
+    </div>
+</section>
